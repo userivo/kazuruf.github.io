@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="utf-8">
+<title>Pedro Ivo - Digital Design & Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="css/main.css">	</head>
+	<body :class="{ 'open': open }">
+		<div class="page cf">
+			<div class="canvas">
+								<section id="hero" data-aos="fade" data-aos-delay="200">
+	<!-- Header -->
+<header>
+	<div class="container">
+		<a href="index.html" id="logo" title="Joe Dawson"></a>
+		<nav>
+			<button class="btn btn-secondary" @click="toggleCanvas">Got a project?</button>		</nav>
+	</div>
+</header>	<div class="container">
+		<div class="inner">
+			<h1>Hi, I'm Pedro Ivo —<br />Digital Designer &amp; Developer</h1>
+			<p>I am currently working in the area of software development for 3 years. And always believing that development is more than a job, but a motivation to live.</p>
+			<listening name="joeaarondawson" key="b336731193429e885ee95be7d9d488d3"></listening>
+		</div>
+	</div>
+	<div class="container lower">
+		<span class="down">Scroll Down</span>
+	</div>
+</section>
+								<div class="content">
+					
+		<section id="background" data-aos="fade-up" data-aos-delay="200">
+	<div class="container">
+		<aside>
+			<h3>— Background</h3>
+		</aside>
+		<article>
+			<p>Basically I had my computer start in 2009 with 10 years, after that I was always researching about it at 11 years old I was invited to participate in a scientific workshop at UFSCar, where I stayed until the age of 17, earning rewards for merit of the projects developed. Through this I was invited to be a developer of a management of innovation (Geitec).</p>
+			<p>Through this small path in my life I learned many things from the scientific and business environment, that innovation is something that really changes everything and I always think of innovating when it comes to software development, but always thinking about keeping the system focused.</p>
+			<p>So these were my first 3 years in the world of software developers.</p>
+		</article>
+	</div>
+</section>		<section id="skills" data-aos="fade-up" data-aos-delay="200">
+	<div class="container">
+		<aside>
+			<h3>— Skills</h3>
+		</aside>
+		<article>
+			<p>Over the years, I've picked up a lot of skills along the way and would consider myself a full stack. Here are some skills I specialise in and am eager to add to.</p>
+
+			<div class="row">
+				<div class="col">
+					<h3>Design</h3>
+					<ul class="list">
+						<li>Sketch</li>
+						<li>Photoshop</li>
+						<li>Web Design</li>
+						<li>iOS &amp; Android</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Frontend</h3>
+					<ul class="list">
+						<li>HTML</li>
+						<li>CSS &amp; Sass</li>
+						<li>JS &amp; jQuery</li>
+						<li>Vue.js &amp; Angular</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Backend</h3>
+					<ul class="list">
+						<li>PHP &amp; Laravel</li>
+						<li>Database</li>
+						<li>Composer</li>
+						<li>PHP Packages</li>
+						<li>Node.js</li>
+						<li>Phyton</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Other</h3>
+					<ul class="list">
+						<li>Ionic</li>
+						<li>Electron</li>
+						<li>Swift <span class="label lmg-8">Learning</span></li>
+						<li>PL/SQL</li>
+						<li>Delphi</li>
+						<li>COBOL</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+	</div>	
+</section>
+				</div>
+								<section id="work">
+	<a target="_blank" class="work-item inkedfemales" href="https://dribbble.com/joedawsonnn/projects/262273-Inked-Females" data-aos="fade-up" data-aos-delay="200">
+		<span class="title">
+			<span class="date">2013 — 2016</span>
+			  Mind Consulting - CTO
+		</span>
+	</a>
+	<a target="_blank" class="work-item laracasts" href="" data-aos="fade-up" data-aos-delay="200">
+		<span class="title">
+			<span class="date">2016 — 2017</span>
+			Geitec (Mba) - Developer Full Stack
+		</span>
+	</a>
+	<a target="_blank" class="work-item grimearchive" href="https://lifenroll.com.br" data-aos="fade-up" data-aos-delay="200">
+		<span class="title">
+			<span class="date">Side Project</span>
+			LifeNRoll - CTO
+		</span>
+	</a>
+	<a target="_blank" class="work-item corespawn" href="https://crawlerdev.com" data-aos="fade-up" data-aos-delay="200">
+		<span class="title">
+			<span class="date">Work in Progress</span>
+			Crawlerdev - CEO 
+		</span>
+	</a>
+</section>								<section id="cta" data-aos="fade-up" data-aos-delay="400">
+	<button class="btn btn-white" @click="toggleCanvas">Got a project?</button>
+</section>			</div>
+			<div class="off-canvas">
+				<div class="contact">
+<form action="https://joedawson.me/" method="POST">
+	<input type="hidden" name="_token" value="">
+	<h2 class="tmg-0">Then let's talk!</h2>
+	<p>Just pop in your details below and I'll respond as soon as soon as possible. I look forward to working with you!</p>
+	<div class="row row-full">
+		<div class="col">
+			<div class="group" :class="{ 'focused': message.name }">
+				<label for="name">What's your name?</label>
+				<input type="text" v-model="message.name" name="name" required>
+			</div>
+		</div>
+		<div class="col">
+			<div class="group" :class="{ 'focused': message.email }">
+				<label for="email">And your email?</label>
+				<input type="email" v-model="message.email" name="email" required>
+			</div>
+		</div>
+	</div>
+	<div class="row row-full">
+		<div class="col">
+			<div class="group" :class="{ 'focused': message.website }">
+				<label for="website">Your website?</label>
+				<input type="text" v-model="message.website" name="website">
+			</div>
+		</div>
+		<div class="col">
+			<div class="group" :class="{ 'focused': message.budget }">
+				<label for="budget">What's your budget?</label>
+				<input type="text" v-model="message.budget" name="budget" required>
+			</div>
+		</div>
+	</div>
+	<div class="group" :class="{ 'focused': message.body }">
+		<label for="body">So, you said you have a project?</label>
+		<textarea v-model="message.body" name="body" required></textarea>
+	</div>
+	<div class="group bmg-0">
+		<button type="submit" class="btn btn-white rmg-12">Send Message</button>
+		<a href="#" class="btn btn-grey" @click="toggleCanvas">Cancel</a>
+	</div>
+</form>				</div>
+			</div>
+		</div>
+		<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+<script src="../use.typekit.net/bra3dpr.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-36730275-1', 'auto');
+ga('send', 'pageview');
+</script>	</body>
+
+<!-- Mirrored from joedawson.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 May 2017 16:14:10 GMT -->
+</html>
