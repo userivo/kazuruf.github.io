@@ -1,241 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
+<!-- Inspirado em maxmclau.com/ realmente um site genial-->
+<head>
 
-<html lang="en">
+<meta charset='UTF-8'>
+<meta name='description' content='Pedro Ivo Faria do Amaral / Full Stack Developer	.'>
+<meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1' />
 
-	<head>
+<title>Pedro Ivo / BackEnd Dev</title>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Pedro Ivo / FrontEnd Developer &  BackEnd Developer">
-	  <meta name="author" content="Pedro Kazuruf">
+<link rel='shortcut icon' type='image/x-icon' href='static/assets/images/favicon.ico'>
 
-	  <title>Pedro Ivo / FrontEnd Developer &  BackEnd Developer</title>
+<link rel='stylesheet' href='static/style/style.css' media='screen'>
 
+<script type='text/javascript' src='static/js/lib/email.js'></script>
 
-	  <link rel="stylesheet" href="css/style.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
 
+<section class='full-width'>
+	<canvas id='stream'></canvas>
+</section>
 
-		</head>
+<section id='preface' class='body-width'>
+	<h1>Pedro Ivo Faria do Amaral</h1>
+	<p>Developer of technologies focused on artificial intelligence and data analysis</a> With extensive experience developing Ruby and Python</p>
+</section>
 
-	<body>
-
-		<div class="container-info">
-			<a name="top-mobile"></a>
-			<div class="info-main">
-				<div class="info__headshot"><img class="info__headshot-img" src="images/avatar-cam.png"></div>
-				<div class="info__tag">Kazuruf</div>
-				<div class="info__elevator">
-					<h1 class="info__elevator-text">
-						I'm Pedro Ivo. Full Stack Developer at <a class="info__elevator-link" href="http://www.bramerhost.com">BramerHost</a>.
-					</h1>
-				</div>
-				<a href="mailto:pedroivodev@outlook.com" class="info__button--dark">Let's Grab a Coffee</a>
-			</div>
-			<div class="info-footer">
-				<div class="info-footer__kitchener">
-					<img src="images/icon-kitchener.svg" class="info-footer__kitchener-img">
-					<a href="" target="_blank" class="info-footer__kitchener-text">Made in Sorocaba/SP</a>
-				</div>
-				<div class="info-footer__social">
-					<a href="https://github.com/kazuruf" target="_blank" class="fa fa-github info-footer__social-icon--github"></a>
-					<a href="https://www.linkedin.com/in/ka3uruf/" target="_blank" class="fa fa-linkedin info-footer__social-icon--linkedin"></a>
-
-
-
-				</div>
-			</div>
-		</div>
-
-		<div class="container-main">
-			<a name="top-desktop"></a>
-			<div class="main__container-about">
-
-				<div class="main__tag">About Me</div>
-				<p class="main__copy">
-
-Basically I had my computer start in 2009 with 10 years, after that I was always researching about it at 11 years old I was invited to participate in a scientific workshop at UFSCar, where I stayed until the age of 17, earning rewards for merit of the projects developed. Through this I was invited to be a developer of a management of innovation (Geitec).
-
-Through this small path in my life I learned many things from the scientific and business environment, that innovation is something that really changes everything and I always think of innovating when it comes to software development, but always thinking about keeping the system focused.
-
-So these were my first 3 years in the world of software developers.
-
-				</p>
-
-				<ul class="main__list">
-					<li class="main__list-item">Vue.js & Angular</li>
-					<li class="main__list-item">JS & jQuery</li>
-					<li class="main__list-item">iOS & Android</li>
-					<li class="main__list-item">PHP & Laravel</li>
-					<li class="main__list-item">Node.js</li>
-					<li class="main__list-item">GitHub</li>
-					<li class="main__list-item">Python</li>
-					<li class="main__list-item">Delphi</li>
-					<li class="main__list-item">COBOL</li>
-					<li class="main__list-item">PL/SQL</li>
+<section id='subsections' class='body-width'>
+	<script id='subsection_template' type='x-tmpl-mustache'>
+		{{#subsections}}
+			<article class='subsection'>
+				<h2>{{ title }}</h2>
+				<ul>
+					{{#links}}
+						<li><a href='{{ref}}'>{{name}}</a></li>
+					{{/links}}
 				</ul>
+			</article>
+		{{/subsections}}
+	</script>
+</section>
 
+<section id='later' class='body-width'>
+	<article class='halfsection'>
+		<h1>Currently</h1>
+		<p>
+			Working frellancer, also in some personal projects and in projects in companies whose services i have already rendered</p>
+	</article>
+	<article class='halfsection'>
+		<h1>Contact</h1>
+		<p><script>mail2('pedroivodev', 'gmail', 0, '', 'Email')</script> is the easiest way to get in touch, but I'm also on</p>
+	</article>
+</section>
 
-			</div>
+<footer class='body-width'>
+	<span>Pedro Ivo Faria do amaral &copy; 2017<span>
+</footer>
 
-			<div class="main__container-projects">
+<script type='text/javascript' src='static/js/lib/mustache.min.js'></script>
+<script type='text/javascript' src='static/js/ext/ext.js'></script>
+<script type='text/javascript' src='static/js/runtime/templating.min.js'></script>
+<script type='text/javascript' src='static/js/runtime/matter.js'></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
 
-				<div class="main__tag">Projects</div>
+	ga('create', 'UA-56868166-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
 
-
-				<div class="main__project--first">
-					<h2 class="main__project-title"><a href="http://lifeshadowing.com.br/">CTO - LifeNRoll</a></h2>
-					<p class="main__project-description">
-						LifeNRoll is an online platform for the exchange of real experiences through life shadowing methodology , where ordinary people around the world can live different lifestyles , whether professional , recreational , spiritual , tourism, etc....
-					</p>
-				</div>
-
-				<div class="main__project">
-					<h2 class="main__project-title"><a href="https://crawlerdev.com">CTO- CrawlerDev</a></h2>
-					<p class="main__project-description">
-						Company consists of actions to increase the accessibility of development with the customer "idealizer", often several people have ideas that really have an active principle both economically and socially, but do not have the capital to pay developers for this, then the active role of CrawlerDev is taking on this niche of demand through the concept created by us angel developer.
-					</p>
-				</div>
-
-				<div class="main__project">
-					<h2 class="main__project-title"><a href="https://mindconsulting.com">CTO - Mind Consulting</a></h2>
-					<p class="main__project-description">
-						We have a team dedicated to develop technology for your safety, commodity and well-being. Based on real experiences, our mission is to create ways to make your life easier. Every technology that we work on focus on user experience, which means, we have a serious value to accomplish: make our users satisfied. Innovation is the word that we believe that is our groundwork. Our consulting service aims to develop the best IT service for our clients.
-on.
-					</p>
-				</div>
-
-				<div class="main__project">
-					<h2 class="main__project-title"><a href="https://bramerhost.com">BramerHost</a></h2>
-					<p class="main__project-description">
-						Many businesses and businesses are starting to work with the internet, and often do not know how to expand your site! And that's when we come in again! Our SEO tool is advanced and generates excellent hits! Increasing the Recognition of Your Brand, and Bringing New Customers to Your Business!
-				</div>
-
-				<div class="main__project">
-					<h2 class="main__project-title"><a href="">Emerald Framework</a></h2>
-					<p class="main__project-description">
-						Emerald Framework is a web development environment dedicated to make web developers' lives easier and fun.
-					</p>
-				</div>
-
-
-
-			</div>
-
-			<div class="main__container-clients">
-
-				<div class="main__tag">Skills</div>
-				<p class="main__copy">
-					Over the years, I've picked up a lot of skills along the way and would consider myself a full stack. Here are some skills I specialise in and am eager to add to.
-				</p>
-
-
-
-			</div>
-
-			<div class="main__container-experience">
-
-				<div class="main__tag">Experience</div>
-
-					<div class="main__experience">
-					<div class="main__experience-info">
-					<div class="main__experience-info-company">ProjetaBIM</div>
-					<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-					</div>
-					<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">The Bridge</div>
-						<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-				</div>
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">BramerHost</div>
-						<div class="main__experience-info-position">Full Stack Developer & Security Analist</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-				</div>
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">CrawlerDev</div>
-						<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-				</div>
-					<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Volkoff</div>
-						<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-				</div>
-
-					<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Emerald Framework</div>
-						<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2017</div>
-				</div>
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">LifeNRoll</div>
-						<div class="main__experience-info-position">CTO</div>
-					</div>
-					<div class="main__experience-year">2016</div>
-				</div>
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Geitec</div>
-						<div class="main__experience-info-position">Full Stack Developer</div>
-					</div>
-					<div class="main__experience-year">2016</div>
-				</div>
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Mind Consulting</div>
-						<div class="main__experience-info-position">CTO & BackEnd Developer</div>
-					</div>
-					<div class="main__experience-year">2016</div>
-				</div>
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Freelance</div>
-						<div class="main__experience-info-position">UX Designer & Developer</div>
-					</div>
-					<div class="main__experience-year">2015</div>
-				</div>
-
-			</div>
-
-			<div class="main__container-resume">
-				<h2 class="main__resume"><a href="images/pedroivodev.pdf" target="_blank">View My Resume</a></h2>
-			</div>
-
-		</div>
-
-
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-72566018-1', 'auto');
-		  ga('send', 'pageview');
-		</script>
-		<script src="js/nodePattern.js"></script>
-
-	</body>
-
+<!-- Inspirado em  maxmclau.com/ realmente um site genial-->
 </html>
